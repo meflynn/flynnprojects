@@ -36,4 +36,5 @@ Imports:
     kableExtra,
     troopdata,
     countrycode,
-    ggdag
+    ggdag,
+    loo
