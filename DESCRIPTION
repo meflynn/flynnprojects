@@ -1,0 +1,39 @@
+Package: flynnprojects
+Title: Tools For Data Analysis
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Michael",
+           family = "Flynn",
+           role = c("aut", "cre"),
+           email = "flynn.michael.e@gmail.com",
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: This package imports most of the packages that I use on a regular basis for my work. It also contains my customized ggplot theme so I can use it across platforms and other users can also accecss it.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Imports: 
+    readr,
+    ggplot2,
+    brms,
+    tidybayes,
+    ggdist,
+    data.table,
+    ggtext,
+    ggrepel,
+    modelsummary,
+    cshapes,
+    bayestestR,
+    scales,
+    patchwork,
+    here,
+    arm,
+    performance,
+    kableExtra,
+    troopdata,
+    countrycode,
+    ggdag
