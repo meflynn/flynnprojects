@@ -1,3 +1,9 @@
+#' Custom ggplot2 theme
+#'
+#' This function creates a custom ggplot2 theme
+#' @return Custom ggplot2 theme
+#' @export
+
 theme_flynn <- function(){
 
   theme_linedraw(base_size = basesize, base_family = "oswald") %+replace%
