@@ -4,11 +4,17 @@
 \alias{theme_flynn}
 \title{Custom ggplot2 theme}
 \usage{
-theme_flynn()
+theme_flynn(basesize)
+}
+\arguments{
+\item{basesize}{The size of the font to be used}
 }
 \value{
 Custom ggplot2 theme
 }
 \description{
 This function creates a custom ggplot2 theme
+}
+\author{
+Michael E. Flynn
 }

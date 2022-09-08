@@ -2,11 +2,13 @@
 #'
 #' This function creates a custom ggplot2 theme
 #' @return Custom ggplot2 theme
+#'
+#' @param basesize The size of the font to be used
+#' @author Michael E. Flynn
+#'
 #' @export
 
-theme_flynn <- function(){
-
-  basesize <- 11
+theme_flynn <- function(basesize){
 
   theme_linedraw(base_size = basesize, base_family = "oswald") %+replace%
 
