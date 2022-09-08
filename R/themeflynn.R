@@ -6,7 +6,7 @@
 
 theme_flynn <- function(){
 
-  theme_linedraw(base_size = basesize, base_family = "oswald") %+replace%
+  theme_linedraw(base_size = 11, base_family = "oswald") %+replace%
 
     theme(plot.title = element_text(face = "bold", size = basesize*1.3, hjust = 0, margin = margin(t = 0, b = 0.3, l = 0, r = 0, unit = "cm")),
           plot.subtitle = element_text(size = basesize),
