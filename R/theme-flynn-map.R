@@ -21,6 +21,7 @@ theme_flynn_map <- function(base_size = 11, base_family = ""){
           panel.background = element_blank(),
           panel.grid.major = element_blank(),
           panel.grid.minor = element_blank(),
+          axis.text = element_blank(),
           axis.title = element_text(face = "bold", size = base_size),
           axis.title.y = element_text(angle = 90, margin = margin(t = 0, r = 0.5, b = 0, l = 0, unit = "cm")),
           axis.title.x = element_text(margin = margin(t = 0.5, r = 0, b = 0, l = 0, unit = "cm")),
