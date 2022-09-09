@@ -1,20 +1,20 @@
 #' Custom ggplot2 theme
 #'
 #' This function creates a custom ggplot2 theme
-#' @return Custom ggplot2 theme
 #'
-#' @param basesize The size of the font to be used
+#' @inheritParams ggplot2::theme_grey
 #' @author Michael E. Flynn
 #'
 #' @export
+#' @importFrom ggplot2 %+replace%
 
-theme_flynn <- function(basesize){
+theme_flynn <- function(base_size = 11, base_family = ""){
 
-  theme_linedraw(base_size = basesize, base_family = "oswald") %+replace%
+  theme_linedraw(base_size = base_size, base_family = base_family) %+replace%
 
     theme(plot.title = element_text(face = "bold", size = basesize*1.3, hjust = 0, margin = margin(t = 0, b = 0.3, l = 0, r = 0, unit = "cm")),
           plot.subtitle = element_text(size = basesize),
-          plot.caption = element_text(face = "italic", size = basesize * 0.6),
+          plot.caption = element_text(face = "italic", size = base_size * 0.6),
           panel.border = element_rect(fill = NA, size = 0.2),
           strip.background = element_rect(fill = "gray80", color = "black", size = 0.2),
           strip.text = element_text(size = basesize, color = "black", face = "bold", margin = margin(t = 0.2, b = 0.2, l = 0.2, r = 0.2, unit = "cm")),
@@ -27,6 +27,5 @@ theme_flynn <- function(basesize){
           axis.ticks = element_line(size = 0.1),
           axis.ticks.length = unit(0.1, "cm"),
           legend.title = element_text(size = basesize * 1.1, face = "bold", hjust = 0, margin = margin(t = 0, b = 0, l = 0, r = 0, unit = "cm")),
-          plot.margin = margin(0.5, 0.5, 0.5, 0.5, unit = "cm"),
-          legend.margin = margin(t=-10, b=0, r=0, l=0))
+          plot.margin = margin(0.5, 0.5, 0.5, 0.5, unit = "cm"))
 }
