@@ -12,8 +12,8 @@ theme_flynn <- function(base_size = 11, base_family = ""){
 
   theme_linedraw(base_size = base_size, base_family = base_family) %+replace%
 
-    theme(plot.title = element_text(face = "bold", size = base_size*1.2, hjust = 0, margin = margin(t = 0, b = 0.3, l = 0, r = 0, unit = "cm")),
-          plot.subtitle = element_text(size = base_size),
+    theme(plot.title = element_text(face = "bold", size = base_size*1.2, hjust = 0, margin = margin(t = 0, b = 0.2, l = 0, r = 0, unit = "cm")),
+          plot.subtitle = element_text(size = base_size, hjust = 0, margin = margin(b = 0.1, unit = "cm")),
           plot.caption = element_text(face = "italic", size = base_size * 0.6),
           panel.border = element_rect(fill = NA, size = 0.2),
           strip.background = element_rect(fill = "gray80", color = "black", size = 0.2),
