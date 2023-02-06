@@ -23,7 +23,7 @@ theme_flynn <- function(base_size = 11, base_family = ""){
           panel.grid.minor = element_line(color = "gray90", size = 0.1),
           axis.title = element_text(face = "bold", size = base_size),
           axis.title.y = element_text(angle = 90, margin = margin(t = 0, r = 0.5, b = 0, l = 0, unit = "cm")),
-          axis.title.x = element_text(margin = margin(t = 0.5, r = 0, b = 0, l = 0, unit = "cm")),
+          axis.title.x = element_text(margin = margin(t = 0.5, r = 0, b = 0.3, l = 0, unit = "cm")),
           axis.ticks = element_line(size = 0.1),
           axis.ticks.length = unit(0.1, "cm"),
           legend.title = element_text(size = base_size * 1.1, face = "bold", hjust = 0, margin = margin(t = 0, b = 0, l = 0, r = 0, unit = "cm")),
