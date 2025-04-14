@@ -15,6 +15,7 @@ theme_flynn <- function(base_size = 11, base_family = ""){
     theme(plot.title = element_text(face = "bold", size = base_size*1.4, hjust = 0, margin = margin(t = 0, b = 0.2, l = 0, r = 0, unit = "cm")),
           plot.title.position = "plot",
           plot.subtitle = element_text(size = base_size * 1.1, hjust = 0, margin = margin(b = 0.1, unit = "cm")),
+          plot.subtitle.position = "plot",
           plot.caption = element_text(family = "roboto", face = "italic", size = base_size * 0.6, hjust = 1, margin = margin(t = 0, unit = "cm")),
           plot.caption.position = "plot",
           panel.border = element_rect(fill = NA, size = 0.2),
